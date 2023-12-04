@@ -5,10 +5,8 @@ import 'package:weather_whiz/application/wheather/wheather_bloc.dart';
 import 'package:weather_whiz/ui/home_page/widgets/cloudwidget.dart';
 import 'package:intl/intl.dart';
 
-class HomeScreen extends StatelessWidget {
-  HomeScreen({super.key});
-
-  int? temparature = 32;
+class HomeScreenMobile extends StatelessWidget {
+  const HomeScreenMobile({super.key});
 
   @override
   Widget build(BuildContext context) {

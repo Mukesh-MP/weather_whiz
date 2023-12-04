@@ -5,6 +5,7 @@ import 'package:weather_whiz/domain/core/failure/main_failures.dart';
 import 'package:weather_whiz/domain/wheather/i_wheatherdata_repo.dart';
 import 'package:weather_whiz/infrastructure/wheather/wheather_respository.dart';
 import 'package:weather_whiz/ui/home_page/homescreen.dart';
+import 'package:weather_whiz/ui/home_page/homescreen_builder.dart';
 
 void main() {
   runApp(MyApp());
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => WheatherBloc(wheatherDataRepo),
-      child: MaterialApp(
+      child: const MaterialApp(
         debugShowCheckedModeBanner: false,
         home: HomeScreen(),
       ),
